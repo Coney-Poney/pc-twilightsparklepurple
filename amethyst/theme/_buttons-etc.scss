@@ -1,0 +1,61 @@
+@mixin filled-button($color) {
+  background-color: var(--amethyst-#{$color});
+
+  &:hover {
+    background-color: var(--amethyst-#{$color}-hover);
+  }
+
+  &:active {
+    background-color: var(--amethyst-#{$color}-active);
+  }
+}
+
+// ---------------------------- Checkbox ---------------------------- \\
+.checked-3_4uQ9 {
+  path {
+    fill: var(--amethyst-primary);
+  }
+}
+
+#app-mount {
+  // ---------------------------- Popout buttons ---------------------------- \\
+  .colorDefault-2K3EoJ {
+    &:active, // &:not(.hideInteraction-1iHO1O)
+    &.focused-3afm-j {
+      color: white;
+      background-color: var(--amethyst-brand-hover);
+    }
+  }
+
+  .colorDanger-2qLCe1 { // I know this is cheating... but oh well
+    --amethyst-brand-hover: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
+  }
+
+  // ---------------------------- Filled buttons ---------------------------- \\
+  .lookFilled-1Gx00P {
+    &.colorBrand-3pXr91 {
+      @include filled-button("brand");
+    }
+
+    &.colorGrey-2DXtkV,
+    &.colorPrimary-3b3xI6 {
+      @include filled-button("primary");
+    }
+  }
+}
+
+// ---------------------------- Sliders ---------------------------- \\
+.slider-1PF9SW {
+  .grabber-3mFHz2 {
+    border-color: var(--interactive-normal);
+    background-color: var(--interactive-normal);
+  }
+
+  .bar-2Qqk5Z {
+    background-color: var(--amethyst-primary-active);
+
+    > .barFill-23-gu- {
+      background-color: var(--amethyst-brand);
+    }
+  }
+}

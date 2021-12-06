@@ -1,0 +1,8 @@
+{
+    "name": "Cooler Activity Status",
+    "description": "makes to activity cards cooler",
+    "version": "1",
+    "author": "mr_miner#6969",
+    "theme": "theme.scss",
+    "license": "MIT"
+}
