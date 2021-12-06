@@ -1,0 +1,9 @@
+@import "./amethyst/_index.scss";
+@import "./cooler-activity-status/theme.scss";
+@import "./modern-channel-indicators/index.scss";
+
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+/* fix space of no pronoun */
+header-23xsNx > .pronoundb-pronouns:empty {
+    display: none;
+}
